@@ -12,7 +12,7 @@
   ])
 function RouterFunction($stateProvider){
   $stateProvider
-  .state("astroIndex",{
+  .state("astroIndex", {
     url: "/astro",
     templateUrl: "js/astro/index.html",
     controller: "AstroIndexController",
