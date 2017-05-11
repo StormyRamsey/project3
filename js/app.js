@@ -36,7 +36,7 @@ function RouterFunction($stateProvider){
   })
   .state("planetShow",{
   url: "/planet/:id",
-  templateUrl: "js/planets/index.html",
+  templateUrl: "js/planets/show.html",
   controller: "PlanetShowController",
   controllerAs: "vm"
   })
