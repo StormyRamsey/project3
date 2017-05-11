@@ -9,7 +9,7 @@
     ])
 
   function PlanetFactoryFunction($resource) {
-    return $resource("http://localhost:3000/planets/:id", {}, {
+    return $resource("http://localhost:3000/planets/:id.json", {}, {
       update: {method: "PUT"}
     });
   }

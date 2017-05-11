@@ -10,8 +10,8 @@
 
 
   function PlanetIndexControllerFunction(PlanetFactory) {
-    console.log("PlanetIndexControllerFunction")
-    this.astros = PlanetFactory.query()
+    this.planets = PlanetFactory.query()
+        console.log(this.astros)
   }
 
 })();

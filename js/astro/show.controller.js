@@ -11,8 +11,8 @@
 
 
   function AstroShowControllerFunction(AstroFactory, $stateParams) {
-    console.log("AstroShowControllerFunction")
     this.astro = AstroFactory.get({id: $stateParams.id})
+    console.log(this.astro)
   }
 
 })();

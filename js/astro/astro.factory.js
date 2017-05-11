@@ -9,7 +9,7 @@
     ])
 
   function AstroFactoryFunction($resource) {
-    return $resource("http://localhost:3000/astronauts/:id", {}, {
+    return $resource("http://localhost:3000/astros/:id.json", {}, {
       update: {method: "PUT"}
     });
   }

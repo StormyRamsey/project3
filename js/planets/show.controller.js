@@ -11,8 +11,8 @@
 
 
   function PlanetShowControllerFunction(PlanetFactory, $stateParams) {
-    console.log("PlanetShowControllerFunction")
     this.planet = PlanetFactory.get({id: $stateParams.id})
+    console.log(this.planet)
   }
 
 })();
