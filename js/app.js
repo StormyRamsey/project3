@@ -29,7 +29,7 @@ function RouterFunction($stateProvider){
 function RouterFunction($stateProvider){
   $stateProvider
   .state("planetIndex",{
-    url: "/planet/:id",
+    url: "/planet",
     templateUrl: "js/planets/index.html",
     controller: "PlanetIndexController",
     controllerAs: "vm"
