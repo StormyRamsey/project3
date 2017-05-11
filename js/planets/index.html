@@ -1,0 +1,4 @@
+<h1>Planet Index</h1>
+<div ng-repeat="planet in vm.planets">
+  <a data-ui-sref="planetShow({id: planet.id})"><img ng-src="{{planet.photo_url}}"/></a>
+</div>

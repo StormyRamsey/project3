@@ -14,20 +14,16 @@ function RouterFunction($stateProvider){
   $stateProvider
   .state("astroIndex", {
     url: "/astro",
-    templateUrl:"js/astro/index.html",
+    templateUrl: "js/astro/index.html",
     controller: "AstroIndexController",
     controllerAs: "vm"
   })
   .state("astroShow",{
-    url: "astros/:id",
+    url: "/astros/:id",
     templateUrl: "js/astro/show.html",
-    controller: "AstrosShowController",
+    controller: "AstroShowController",
     controllerAs: "vm"
-    })
-  }
-
-function RouterFunction($stateProvider){
-  $stateProvider
+  })
   .state("planetIndex",{
     url: "/planet",
     templateUrl: "js/planets/index.html",

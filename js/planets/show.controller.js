@@ -3,14 +3,16 @@
 (function(){
   angular
     .module("goldie_nauts")
-    .controller("PlanetshowController", [
-      PlanetshowControllerFunction
+    .controller("PlanetShowController", [
+      "PlanetFactory",
+      "$stateParams",
+      PlanetShowControllerFunction
     ])
 
 
-  function PlanetshowControllerFunction(PlanetFactory) {
-
-
+  function PlanetShowControllerFunction(PlanetFactory, $stateParams) {
+    this.planet = PlanetFactory.get({id: $stateParams.id})
+    console.log(this.planet)
   }
 
 })();

@@ -3,14 +3,16 @@
 (function(){
   angular
     .module("goldie_nauts")
-    .controller("AstroshowController", [
-      AstroshowControllerFunction
+    .controller("AstroShowController", [
+      "AstroFactory",
+      "$stateParams",
+      AstroShowControllerFunction
     ])
 
 
-  function AstroshowControllerFunction(AstroFactory) {
-
-
+  function AstroShowControllerFunction(AstroFactory, $stateParams) {
+    this.astro = AstroFactory.get({id: $stateParams.id})
+    console.log(this.astro)
   }
 
 })();

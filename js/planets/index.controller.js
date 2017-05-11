@@ -3,14 +3,15 @@
 (function(){
   angular
     .module("goldie_nauts")
-    .controller("PlanetindexController", [
-      PlanetindexControllerFunction
+    .controller("PlanetIndexController", [
+      "PlanetFactory",
+      PlanetIndexControllerFunction
     ])
 
 
-  function PlanetindexControllerFunction(PlanetFactory) {
-
-
+  function PlanetIndexControllerFunction(PlanetFactory) {
+    this.planets = PlanetFactory.query()
+        console.log(this.astros)
   }
 
 })();
