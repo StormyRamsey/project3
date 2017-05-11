@@ -1,16 +1,3 @@
-"use strict";
-
-(function(){
-  angular
-    .module("goldie_nauts")
-    .controller("PlanetshowController", [
-      PlanetshowControllerFunction
-    ])
-
-
-  function PlanetshowControllerFunction(PlanetFactory) {
-
-
-  }
-
-})();
+<h1>Show Planet</h1>
+<img ng-src={{vm.planet.img_url}}/>
+<div>{{vm.planet.name}}</div>
