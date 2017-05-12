@@ -15,11 +15,11 @@
 }
 
 .planet-container img {
-  border-radius: 105px;
+  border-radius: 100px;
   margin-left: 10px;
   margin-right: 10px;
-  width: 210px;
-  height: 210px;
+  width: 200px;
+  height: 200px;
 }
 
 .planet-content {
@@ -45,5 +45,5 @@
 }
 
 .moreInfo {
-  color: darkorchid;
+  color: orchid;
 }
