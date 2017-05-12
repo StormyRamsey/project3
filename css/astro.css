@@ -1,0 +1,55 @@
+body {
+  background: url("../img/astronauts/bg2.jpeg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+.astro{
+  width: 1250px;
+  padding: 60px;
+  display: flex;
+flex-direction: row;
+}
+
+img{
+border-radius: 50%;
+width: 150px;
+height: 180px;
+ margin: 40px;
+ border: 3px solid #F5FAFA;
+}
+
+.show{
+margin: auto;
+background-color: green;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.name-show{
+  text-align: center;
+}
+
+p{
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  text-shadow: 1px 1px #8B0000;
+}
+
+a{
+  text-decoration: none;
+}
+
+h2{
+  color: #fff;
+  text-shadow: 1px 1px #8B0000;
+  font-family: 'Roboto', sans-serif;
+}
