@@ -5,6 +5,15 @@
   background-color: black;
 }
 
+.planet-body h1 {
+  background: black;
+  color: lightskyblue;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
 .planet-container img {
   border-radius: 100px;
   margin-left: 10px;
@@ -15,6 +24,7 @@
 
 .planet-content {
   padding-top: 20px;
+  border-top: solid 4px lightskyblue;
   border-left: solid 2px lightskyblue;
   border-right: solid 2px lightskyblue;
 }

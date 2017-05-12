@@ -1,5 +1,6 @@
+<link rel="stylesheet" href="../css/planet.css" />
 <div class="planet-body">
-  <h1>Planet Index</h1>
+  <h1><strong>Habitable Planets</strong></h1>
   <div class="planet-container">
     <div ng-repeat="planet in vm.planets" class="planet-content">
       <a class="planet" data-ui-sref="planetShow({id: planet.id})"><img ng-src="{{planet.photo_url}}" /></a>
