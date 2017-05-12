@@ -15,11 +15,11 @@
 }
 
 .planet-container img {
-  border-radius: 100px;
+  border-radius: 105px;
   margin-left: 10px;
   margin-right: 10px;
-  width: 200px;
-  height: 200px;
+  width: 210px;
+  height: 210px;
 }
 
 .planet-content {
@@ -42,4 +42,8 @@
 
 .planet-bio strong {
   color: lightskyblue;
+}
+
+.moreInfo {
+  color: darkorchid;
 }

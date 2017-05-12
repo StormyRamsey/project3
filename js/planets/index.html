@@ -12,8 +12,11 @@
         <p><strong>Mass: </strong>{{planet.mass}}</p>
         <p><strong>Period: </strong>{{planet.period}}</p>
         <p><strong>Distance: </strong>{{planet.distance}}</p>
-        <p><strong>About: </strong>{{planet.about}}</p>
-        <p><strong>Habitability: </strong>{{planet.more}}</p>
+        <p class="moreInfo">More Info: <input type="checkbox" ng-model="moreInfo"></p>
+        <div ng-show="moreInfo">
+          <p><strong>About: </strong>{{planet.about}}</p>
+          <p><strong>Habitability: </strong>{{planet.more}}</p>
+        </div>
       </div>
     </div>
   </div>
