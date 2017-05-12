@@ -6,50 +6,57 @@ body {
     background-size: cover;
     overflow-x: hidden;
   }
+.container{
 
+}
 .astro{
-  width: 1250px;
-  padding: 60px;
   display: flex;
-flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
 }
 
 img{
 border-radius: 50%;
-width: 150px;
-height: 180px;
  margin: 40px;
- border: 3px solid #F5FAFA;
+ border: 2px solid #7ec0ee;
+ width:380px;
+ height:450px;
 }
 
-.show{
-margin: auto;
-background-color: green;
+.show {
 display: flex;
 align-items: center;
 justify-content: center;
 }
 
-.name-show{
+p{
+  color: #7ec0ee;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-shadow: 0.5px 0.5px #000000;
   text-align: center;
 }
 
-p{
-  width: 150px;
-  height: 150px;
-  margin: 20px;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 17px;
-  text-shadow: 1px 1px #8B0000;
+.ng-binding{
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a{
   text-decoration: none;
 }
 
-h2{
-  color: #fff;
-  text-shadow: 1px 1px #8B0000;
+h3{
+  color: #7ec0ee;
   font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  text-shadow: 0.5px 0.5px #000;
 }
+
+@media (min-width: 700px) {
+ }
