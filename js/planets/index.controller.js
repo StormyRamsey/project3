@@ -1,6 +1,6 @@
 "use strict";
 
-(function(){
+(function() {
   angular
     .module("goldie_nauts")
     .controller("PlanetIndexController", [
@@ -11,7 +11,7 @@
 
   function PlanetIndexControllerFunction(PlanetFactory) {
     this.planets = PlanetFactory.query()
-        console.log(this.astros)
+    console.log(this.planets)
   }
 
 })();

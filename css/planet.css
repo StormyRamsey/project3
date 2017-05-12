@@ -1,3 +1,26 @@
-.planet {
-  width: 2px;
+.planet-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.planet-container img {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.planet-content {
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+}
+
+.planet-content p {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.more {
+  display: none;
 }

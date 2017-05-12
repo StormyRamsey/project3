@@ -1,4 +1,20 @@
-<h1>Planet Index</h1>
-<div ng-repeat="planet in vm.planets">
-  <a data-ui-sref="planetShow({id: planet.id})"><img ng-src="{{planet.photo_url}}"/></a>
+<div class="planet-body">
+  <h1>Planet Index</h1>
+  <div class="planet-container">
+    <div ng-repeat="planet in vm.planets" class="planet-content">
+      <a class="planet" data-ui-sref="planetShow({id: planet.id})"><img ng-src="{{planet.photo_url}}" /></a>
+      <br>
+      <p><strong>Planet: </strong>{{planet.name}}</p>
+      <p><strong>Star: </strong>{{planet.star}}</p>
+      <p><strong>Mass: </strong>{{planet.mass}}</p>
+      <p><strong>Period: </strong>{{planet.period}}</p>
+      <p><strong>Distance: </strong>{{planet.distance}}</p>
+      <p><strong>About: </strong>{{planet.about}}</p>
+      <p><strong>Habitability: </strong>{{planet.more}}</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
 </div>
