@@ -7,12 +7,12 @@
       <br>
       <div class="planet-bio">
         <br>
-        <p><strong>Planet: </strong>{{planet.name}}</p>
-        <p><strong>Star: </strong>{{planet.star}}</p>
-        <p><strong>Mass: </strong>{{planet.mass}}</p>
-        <p><strong>Period: </strong>{{planet.period}}</p>
-        <p><strong>Distance: </strong>{{planet.distance}}</p>
-        <p class="moreInfo">More Info: <input type="checkbox" ng-model="moreInfo"></p>
+        <p><strong class="strong">Planet: </strong>{{planet.name}}</p>
+        <p><strong class="strong">Star: </strong>{{planet.star}}</p>
+        <p><strong class="strong">Mass: </strong>{{planet.mass}}</p>
+        <p><strong class="strong">Period: </strong>{{planet.period}}</p>
+        <p><strong class="strong">Distance: </strong>{{planet.distance}}</p>
+        <p><strong class="moreInfo">More Info: </strong><input type="checkbox" ng-model="moreInfo"></p>
         <div ng-show="moreInfo">
           <p><strong>About: </strong>{{planet.about}}</p>
           <p><strong>Habitability: </strong>{{planet.more}}</p>
