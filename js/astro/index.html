@@ -1,18 +1,10 @@
 
-<html>
-<head>
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-</head>
-  <body class="bkg">
+  <div class="bkg">
     <h1 class"heading">Astronauts</h1>
     <div class="container">
         <div class="astro">
         <div ng-repeat="astro in vm.astros">
-        <img ng-src="{{astro.photo_url}}"/></a>
+        <img class="astroMainImg" ng-src="{{astro.photo_url}}"/></a>
         <div class="name"><a data-ui-sref="astroShow({id: astro.id})"><h3>{{astro.name}}</h3></a></div>
     </div>
   </div>
-    </div>
-  </body>
-</html>

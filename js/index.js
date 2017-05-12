@@ -3,11 +3,6 @@
 
 
 $(function () {
-    $("#astroHiddenIndex").removeAttr("style");
-    $("#astroHiddenIndex").attr("width", "1px");
-    $("#astroMainIndex").fadeIn("fast");
-    $("#planetMainIndex").fadeIn("fast");
-
     $("#astroWindowIndex").hide()
     $("#planetMainIndex").hover(function () {
         $(this).attr("src", "/background/earth.gif") ;
@@ -30,9 +25,8 @@ $(function () {
           position: "fixed",
           transform: "rotate(400deg)",
           overflow: "hidden",
-          "width": "150%",
-          "max-width": "1000px",
-          right: "50px",
+          "width": "105%",
+          "max-width": "1300px",
           top: "200px",
           transition: "all 4.6s linear"
         });
@@ -46,6 +40,7 @@ $(function () {
         $("#astroHiddenIndex").attr("width", "1px");
         $("#astroMainIndex").fadeIn("fast");
         $("#planetMainIndex").fadeIn("fast");
+        $("#astroWindowIndex").hide()
         window.location.href = "http://localhost:8080/#/astro";
       }, 6000);
 

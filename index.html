@@ -4,8 +4,7 @@
     <title>Goldie Nauts</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/planet.css" />
-    <link rel="stylesheet" href="../css/astro.css">
-
+    <link rel="stylesheet" href="css/astro.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
@@ -16,22 +15,29 @@
     <script src="js/astro/astro.factory.js"></script>
     <script src="js/astro/index.controller.js"></script>
     <script src="js/astro/show.controller.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
-  <body class="mainIndexBody">
-    <div class="title">Goldie Nauts</div>
-    <div class="mainIndexContainer">
-        <div class= "indexImageContainer">
-          <img id="astroMainIndex" src="/background/astronaut.png">
-          <h2 class="indexName">Tell me about Astronauts</h2>
+  <body >
+    <div class="mainIndexBody">
+
+        <div class="title">Goldie Nauts</div>
+
+        <div class="mainIndexContainer">
+            <div class= "indexImageContainer">
+              <img id="astroMainIndex" src="/background/astronaut.png">
+              <h2 class="indexName">Tell me about Astronauts</h2>
+            </div>
+            <div  class= "indexImageContainer">
+              <a data-ui-sref="planetIndex"><img id="planetMainIndex" src="/background/earth.png"><h2 class="indexName">Tell me about Planets</h2></a>
+            </div>
         </div>
-        <div  class= "indexImageContainer">
-          <a data-ui-sref="planetIndex"><img id="planetMainIndex" src="/background/earth.png"><h2 class="indexName">Tell me about Planets</h2></a>
+
+        <div class="hiddenImageContainer">
+          <img id="astroHiddenIndex" src="/background/astronaut.png">
+          <img id="astroWindowIndex" src="/background/cracked_window.png">
         </div>
     </div>
-    <div class="hiddenImageContainer">
-      <img id="astroHiddenIndex" src="/background/astronaut.png">
-      <img id="astroWindowIndex" src="/background/cracked_window.png">
-    </div>
+
 
     <main data-ui-view></main>
 

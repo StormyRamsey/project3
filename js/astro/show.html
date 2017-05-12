@@ -1,13 +1,9 @@
-
-<html>
-<head>
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
+<div class="bkg">
 <h1>Astronauts Show</h1>
 <div><h3>{{vm.astro.name}}</h3></div>
 <div class="show">
-<a data-ui-sref="astroShow({id: astro.id})"><img ng-src={{vm.astro.photo_url}}/></a>
+<a data-ui-sref="astroShow({id: astro.id})"><img class="astroMainImg" ng-src={{vm.astro.photo_url}}/></a>
 </div>
 <div class="bio"><p>{{vm.astro.bio}}</p></div>
 <div class= "space-exp"><p>{{vm.astro.spaceExp}}</p></div>
-</html>
+</div>
