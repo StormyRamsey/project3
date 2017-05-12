@@ -1,3 +1,81 @@
-img{
-  width: 200px;
+.mainIndexBody {
+  background: url("/background/background1.png")no-repeat center;
+  height: 100vh;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.mainIndexContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.title {
+  box-shadow: 1px 2px 3px rgba(0,0,0,.7);
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  z-index: -1;
+  transition: all 0.6s linear;
+}
+
+.indexImageContainer{
+  width: 20%;
+  min-width: 200px;
+  /*position: absolute;*/
+}
+
+#astroMainIndex, #planetMainIndex  {
+  width: 100%;
+  transition: all 0.6s linear;
+  /*position: relative;*/
+}
+
+#planetMainIndex:hover, #astroMainIndex:hover  {
+  width: 110%;
+  filter: drop-shadow(1px 1px 4px gold);
+}
+
+#astroMainIndex:hover ~ .indexName{
+  visibility: visible;
+  filter: drop-shadow(1px 1px 4px gold);
+}
+
+#planetMainIndex:hover + .indexName{
+  visibility: visible;
+  filter: drop-shadow(1px 1px 4px gold);
+}
+
+
+
+.hiddenImageContainer{
+  position: relative;
+}
+
+#astroHiddenIndex{
+  width: 1px;
+  position: relative;
+}
+
+#astroWindowIndex {
+  width: 100%;
+  min-width: 600px;
+  bottom: -300px;
+  position: absolute;
+}
+
+
+.indexName{
+  visibility:hidden;
+  color: white;
+  text-align: center;
 }

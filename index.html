@@ -16,11 +16,25 @@
     <script src="js/astro/index.controller.js"></script>
     <script src="js/astro/show.controller.js"></script>
   </head>
-  <body>
-    <h1>Goldie Nauts</h1>
-    <a data-ui-sref="planetIndex"><h2>Planets</h2></a>
-    <a data-ui-sref="astroIndex"><h2>Astronauts</h2></a>
+  <body class="mainIndexBody">
+    <div class="title">Goldie Nauts</div>
+    <div class="mainIndexContainer">
+        <div class= "indexImageContainer">
+          <img id="astroMainIndex" src="/background/astronaut.png">
+          <h2 class="indexName">Tell me about Astronauts</h2>
+        </div>
+        <div  class= "indexImageContainer">
+          <a data-ui-sref="planetIndex"><img id="planetMainIndex" src="/background/earth.png"><h2 class="indexName">Tell me about Planets</h2></a>
+        </div>
+    </div>
+    <div class="hiddenImageContainer">
+      <img id="astroHiddenIndex" src="/background/astronaut.png">
+      <img id="astroWindowIndex" src="/background/cracked_window.png">
+    </div>
+
     <main data-ui-view></main>
 
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
