@@ -1,16 +1,27 @@
+body{
+    margin: 0;
+}
 .mainIndexBody {
   background: url("/background/background.png")no-repeat center;
+  background-size: cover;
   height: 100vh;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0;
+  position: relative;
 }
 
 a{
   text-decoration: none;
 }
+
+/*#death_star{
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  width: 800px;
+  filter: drop-shadow(1px 1px 4px black);
+}*/
 
 
 .mainIndexContainer{
@@ -19,24 +30,33 @@ a{
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
+.textContainer{
+  text-align: center;
+}
 .title {
   color: white;
   text-align: center;
-  font-size: 50px;
-  transition: all 0.6s linear;
+  font-size: 60px;
+  transition: all 0.2s linear;
+  font-family: 'Monoton', cursive;
+  color: gold;
+  text-shadow: 2px 2px 2px red;
+  display: inline-block;
+}
+.title:hover{
+    filter: drop-shadow(1px 3px 5px gold);
 }
 
 .indexImageContainer{
   width: 20%;
   min-width: 200px;
-  /*position: absolute;*/
 }
 
 #astroMainIndex, #planetMainIndex  {
-  width: 100%;
-  transition: all 0.6s linear;
-  /*position: relative;*/
+  width: 0px;
+  opacity: 0
+  transition: 1.5s ease-in;
+  opacity: 0;
 }
 
 #planetMainIndex:hover, #astroMainIndex:hover  {
@@ -46,12 +66,10 @@ a{
 
 #astroMainIndex:hover ~ .indexName{
   visibility: visible;
-  filter: drop-shadow(1px 1px 4px gold);
 }
 
 #planetMainIndex:hover + .indexName{
   visibility: visible;
-  filter: drop-shadow(1px 1px 4px gold);
 }
 
 
@@ -68,8 +86,8 @@ a{
 #astroWindowIndex {
   width: 100%;
   min-width: 600px;
-  bottom: -100px;
-  position: relative;
+  bottom: -350px;
+  position: absolute;
 }
 
 
@@ -77,4 +95,6 @@ a{
   visibility:hidden;
   color: white;
   text-align: center;
+  font-family: 'Monoton', cursive;
+  filter: drop-shadow(1px 1px 4px black);
 }
