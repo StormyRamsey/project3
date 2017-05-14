@@ -15,15 +15,6 @@ a{
   text-decoration: none;
 }
 
-/*#death_star{
-  position: absolute;
-  overflow: hidden;
-  z-index: -1;
-  width: 800px;
-  filter: drop-shadow(1px 1px 4px black);
-}*/
-
-
 .mainIndexContainer{
   display: flex;
   flex-direction: row;
@@ -34,6 +25,7 @@ a{
   text-align: center;
 }
 .title {
+  margin-top: 100px;
   color: white;
   text-align: center;
   font-size: 60px;
@@ -54,15 +46,10 @@ a{
 
 #astroMainIndex, #planetMainIndex  {
   width: 0px;
-  opacity: 0
-  transition: 1.5s ease-in;
+  transition: 0.5s ease-in;
   opacity: 0;
 }
 
-#planetMainIndex:hover, #astroMainIndex:hover  {
-  width: 110%;
-  filter: drop-shadow(1px 1px 4px gold);
-}
 
 #astroMainIndex:hover ~ .indexName{
   visibility: visible;
@@ -71,7 +58,6 @@ a{
 #planetMainIndex:hover + .indexName{
   visibility: visible;
 }
-
 
 
 .hiddenImageContainer{
@@ -89,7 +75,6 @@ a{
   bottom: -350px;
   position: absolute;
 }
-
 
 .indexName{
   visibility:hidden;

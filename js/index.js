@@ -1,59 +1,46 @@
-
-
-
-
 $(function () {
 
   $("#astroWindowIndex").hide();
 
   $(".title").click(function(){
-    $("#astroMainIndex").fadeIn();
-    $("#planetMainIndex").fadeIn();
-    $("#astroMainIndex").animate({width: "100%"}, 700);
-    $("#planetMainIndex").animate({width: "100%"}, 700);
-    $("#astroMainIndex").delay(500).animate({"opacity": "1"}, 700);
-    $("#planetMainIndex").delay(600).animate({"opacity": "1"}, 700);
+    $("#planetMainIndex").on({
+      mouseenter: function() {
+        $(this).attr("src", "/background/earth.gif");
+        $(this).css({width: "110%", filter: "drop-shadow(1px 1px 4px gold)"});
+      },
+      mouseleave: function() {
+        $(this).attr("src", "/background/earth.png");
+        $(this).css({width: "100%", filter: ""});
+      }
+    });
+    $("#astroMainIndex").on({
+      mouseenter: function() {
+        $(this).css({width: "110%", filter: "drop-shadow(1px 1px 4px gold)"});
+      },
+      mouseleave: function() {
+        $(this).css({width: "100%", filter: ""});
+      }
+    });
+    $("#astroMainIndex").animate({width: "100%"});
+    $("#planetMainIndex").animate({width: "100%"});
+    $("#astroMainIndex").delay(100).animate({"opacity": "1"}, 700);
+    $("#planetMainIndex").delay(300).animate({"opacity": "1"}, 700);
   })
-
-  $("#planetMainIndex").hover(function () {
-      $(this).attr("src", "/background/earth.gif")
-      $(this).css({width: "110%", "transition": "1s"}) ;
-    });
-    $("#planetMainIndex").mouseleave(function () {
-        $(this).attr("src", "/background/earth.png")
-        $(this).css({width: "100%"}) ;
-    });
-
-    $("#astroMainIndex").hover(function () {
-        $(this).css({width: "110%", "transition": "1s"}) ;
-    });
-    $("#astroMainIndex").mouseleave(function () {
-        $(this).css({width: "100%"}) ;
-    });
 
     $("#planetMainIndex").click(function(){
 
-      $("#astroMainIndex").animate({width: "0px"}, 700);
-      $("#planetMainIndex").animate({width: "0px"}, 700);
-      $("#astroMainIndex").animate({"opacity": "0"}, 700);
-      $("#planetMainIndex").animate({"opacity": "0"}, 700);
-      $(".indexName").fadeOut("fast");
-      $("#planetMainIndex").fadeOut("fast");
+      $("#astroMainIndex").animate({width: "0px", "opacity": "0"}, 500);
+      $("#planetMainIndex").animate({width: "0px", "opacity": "0"}, 500);
+      $("#planetMainIndex").off("mouseenter mouseleave");
       setTimeout(function() {
-        $(".indexName").fadeIn("fast");
         window.location.href = "http://localhost:8080/#/planet";
       }, 2400);
-
     });
 
     $("#astroMainIndex").click(function(){
-
-      $("#astroMainIndex").animate({width: "0px"}, 700);
-      $("#planetMainIndex").animate({width: "0px"}, 700);
-      $("#astroMainIndex").animate({"opacity": "0"}, 700);
-      $("#planetMainIndex").animate({"opacity": "0"}, 700);
-      $(".indexName").fadeOut("fast");
-      $("#astroMainIndex").fadeOut("fast");
+      $("#astroMainIndex").animate({width: "0px", "opacity": "0"}, 500);
+      $("#planetMainIndex").animate({width: "0px", "opacity": "0"}, 500);
+      $("#astroMainIndex").off("mouseenter mouseleave");
       let showHiddenFunc = function() {
         $("#astroHiddenIndex").delay(600).fadeIn("slow");
       }
@@ -73,8 +60,7 @@ $(function () {
       }, 4500);
       setTimeout(function() {
         $("#astroHiddenIndex").removeAttr("style");
-        $("#astroHiddenIndex").attr("width", "1px");
-        $(".indexName").fadeIn("fast");
+        $("#astroHiddenIndex").attr("width", "0px");
         $("#astroWindowIndex").hide();
         window.location.href = "http://localhost:8080/#/astro";
       }, 6000);
