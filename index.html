@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html data-ng-app="goldie_nauts">
-<<<<<<< HEAD <head>
+
+<head>
   <title>Goldie Nauts</title>
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/planet.css" />
@@ -16,50 +17,50 @@
   <script src="js/astro/index.controller.js"></script>
   <script src="js/astro/show.controller.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto|Monoton" rel="stylesheet">
-  </head>
+</head>
 
-  <body>
-    <img id="bb8" src="/background/bb8.png">
-    <div id="toTop">
-      <a href="#top" class="navTop">Top</a>
-      <a href="#" onclick="location.href = document.referrer; return false;" id="backButton" class="navTop">Main</a>
+<body>
+  <img id="bb8" src="/background/bb8.png">
+  <div id="toTop">
+    <a href="#top" class="navTop">Top</a>
+    <a href="#" onclick="location.href = document.referrer; return false;" id="backButton" class="navTop">Main</a>
+  </div>
+
+
+  <div class="mainIndexBody">
+    <div class="textContainer">
+      <a href="#">
+        <div class="title">Goldie Nauts</div>
+      </a>
+      <div id="titleImage1"></div>
+      <div id="titleImage2"></div>
     </div>
 
-
-    <div class="mainIndexBody">
-      <div class="textContainer">
-        <a href="#">
-          <div class="title">Goldie Nauts</div>
-        </a>
-        <div id="titleImage1"></div>
-        <div id="titleImage2"></div>
+    <div class="mainIndexContainer">
+      <div class="indexImageContainer">
+        <img id="astroMainIndex" src="/background/astronaut.png">
+        <h2 class="indexName">Tell me about Astronauts</h2>
       </div>
-
-      <div class="mainIndexContainer">
-        <div class="indexImageContainer">
-          <img id="astroMainIndex" src="/background/astronaut.png">
-          <h2 class="indexName">Tell me about Astronauts</h2>
-        </div>
-        <div class="indexImageContainer">
-          <img id="planetMainIndex" src="/background/earth.png">
-          <h2 class="indexName">Tell me about Planets</h2>
-        </div>
-      </div>
-
-      <div class="hiddenImageContainer">
-        <img id="astroHiddenIndex" src="/background/astronaut2.png">
-        <img id="astroWindowIndex" src="/background/cracked_window.png">
+      <div class="indexImageContainer">
+        <img id="planetMainIndex" src="/background/earth.png">
+        <h2 class="indexName">Tell me about Planets</h2>
       </div>
     </div>
-    <div id="top"></div>
+
+    <div class="hiddenImageContainer">
+      <img id="astroHiddenIndex" src="/background/astronaut2.png">
+      <img id="astroWindowIndex" src="/background/cracked_window.png">
+    </div>
+  </div>
+  <div id="top"></div>
 
 
-    <main data-ui-view></main>
+  <main data-ui-view></main>
 
 
 
-    <script src="js/jquery.js"></script>
-    <script src="js/index.js"></script>
-  </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/index.js"></script>
+</body>
 
 </html>
