@@ -13,6 +13,10 @@
 
   function RouterFunction($stateProvider) {
     $stateProvider
+      .state("mainIndex", {
+        url: "/"
+        // templateUrl: "js/index.html"
+      })
       .state("astroIndex", {
         url: "/astro",
         templateUrl: "js/astro/index.html",
@@ -38,5 +42,4 @@
         controllerAs: "vm"
       })
   }
-
 })();

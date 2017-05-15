@@ -1,0 +1,59 @@
+.bkg {
+    background: url("/img/astronauts/bg2.jpeg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+
+
+.astro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.astroMainImg{
+border-radius: 50%;
+ margin: 40px;
+ border: 2px solid #7ec0ee;
+ width:380px;
+ height:450px;
+}
+
+.show {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+p{
+  color: #7ec0ee;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-shadow: 0.5px 0.5px #000000;
+  text-align: center;
+}
+
+.ng-binding{
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h3{
+  color: #7ec0ee;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  text-shadow: 0.5px 0.5px #000;
+}
+
+@media (min-width: 700px) {
+ }
