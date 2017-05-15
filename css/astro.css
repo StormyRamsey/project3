@@ -7,8 +7,6 @@
     overflow-x: hidden;
   }
 
-
-
 .astro{
   display: flex;
   flex-direction: column;
@@ -26,34 +24,54 @@ border-radius: 50%;
 }
 
 .show {
+width: 400px;
+padding: 20px;
 display: flex;
 align-items: center;
 justify-content: center;
 }
 
-p{
-  color: #7ec0ee;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  text-shadow: 0.5px 0.5px #000000;
-  text-align: center;
-}
-
-.ng-binding{
-  width: 400px;
-  padding: 20px;
+.space-exp{
+  width: 500px;
+  height: 500px;
+  background-color: pink;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.p {
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+  color: #fff;
+  text-shadow: 0.5px 0.5px #000;
+  width: 800px;
+}
 
-
-h3{
+.p-heading{
+  margin-left: 200px;
+  color: #fff;
+  text-shadow: 0.5px 0.5px #000;
+  font-family: 'Roboto', sans-serif;
+}
+.name{
   color: #7ec0ee;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
   text-shadow: 0.5px 0.5px #000;
 }
+.name-link{
+  text-decoration: none;
+}
 
-@media (min-width: 700px) {
- }
+.checkbox{
+  margin-left: 20px;
+}
+
+.chk-heading{
+  margin-left: 200px;
+  color: #fff;
+  text-shadow: 0.5px 0.5px #000;
+  font-family: 'Roboto', sans-serif;
+  display:inline;
+
+}

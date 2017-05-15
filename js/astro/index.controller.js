@@ -14,4 +14,6 @@
     this.astros = AstroFactory.query()
   }
 
+
+
 })();

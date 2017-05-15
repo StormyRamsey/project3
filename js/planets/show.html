@@ -1,3 +1,24 @@
-<h1>Show Planet</h1>
-<img ng-src="{{vm.planet.photo_url}}"/>
-<div>{{vm.planet.name}}</div>
+<link rel="stylesheet" href="../css/planet.css" />
+<div class="planet-body">
+  <h1><strong>Habitable Planets</strong></h1>
+  <div class="planet-container">
+    <div class="planet-content">
+      <img ng-src="{{vm.planet.photo_url}}" />
+      <br>
+      <div class="planet-bio">
+        <br>
+        <p><strong class="strong">Planet: </strong>{{vm.planet.name}}</p>
+        <p><strong class="strong">Star: </strong>{{vm.planet.star}}</p>
+        <p><strong class="strong">Mass: </strong>{{vm.planet.mass}}</p>
+        <p><strong class="strong">Period: </strong>{{vm.planet.period}}</p>
+        <p><strong class="strong">Distance from Earth: </strong>{{vm.planet.distance}}</p>
+        <hr>
+        <p><strong class="moreInfo">More Info: </strong><input type="checkbox" ng-model="moreInfo"></p>
+        <div ng-show="moreInfo">
+          <p><strong class="strong">About: </strong>{{vm.planet.about}}</p>
+          <p><strong class="strong">Habitability: </strong>{{vm.planet.more}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
 #toTop {
@@ -12,12 +12,11 @@ body{
   font-size: 25px;
   top: 570px;
   right: 30px;
-
 }
 
 .navTop {
   background-color: rgba(244, 183, 0, 0.6);
-  box-shadow: inset 0px -90px 90px -80px rgba(230,55,55,1);
+  box-shadow: inset 0px -90px 90px -80px rgba(230, 55, 55, 1);
   border-radius: 30px;
   width: 1250px;
 }
@@ -45,20 +44,21 @@ body{
   transition: 2.5s ease-out;
 }
 
-
-a{
+a {
   text-decoration: none;
 }
 
-.mainIndexContainer{
+.mainIndexContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.textContainer{
+
+.textContainer {
   text-align: center;
 }
+
 .title {
   margin-top: 100px;
   text-align: center;
@@ -69,36 +69,35 @@ a{
   text-shadow: 2px 2px 2px red;
   display: inline-block;
 }
-.title:hover{
-    filter: drop-shadow(1px 3px 5px gold);
+
+.title:hover {
+  filter: drop-shadow(1px 3px 5px gold);
 }
 
-.indexImageContainer{
+.indexImageContainer {
   width: 20%;
   min-width: 200px;
 }
 
-#astroMainIndex, #planetMainIndex  {
+#astroMainIndex, #planetMainIndex {
   width: 0px;
   transition: 0.5s ease-in;
   opacity: 0;
 }
 
-
-#astroMainIndex:hover ~ .indexName{
+#astroMainIndex:hover~.indexName {
   visibility: visible;
 }
 
-#planetMainIndex:hover + .indexName{
+#planetMainIndex:hover+.indexName {
   visibility: visible;
 }
 
-
-.hiddenImageContainer{
+.hiddenImageContainer {
   position: relative;
 }
 
-#astroHiddenIndex{
+#astroHiddenIndex {
   width: 1px;
   position: relative;
 }
@@ -110,8 +109,8 @@ a{
   position: absolute;
 }
 
-.indexName{
-  visibility:hidden;
+.indexName {
+  visibility: hidden;
   color: white;
   text-align: center;
   font-family: 'Monoton', cursive;
