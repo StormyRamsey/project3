@@ -6,12 +6,14 @@
     .controller("AstroShowController", [
       "AstroFactory",
       "$stateParams",
+      "$anchorScroll",
       AstroShowControllerFunction
     ])
 
 
-  function AstroShowControllerFunction(AstroFactory, $stateParams) {
+  function AstroShowControllerFunction(AstroFactory, $stateParams, $anchorScroll) {
     this.astro = AstroFactory.get({id: $stateParams.id})
+    $anchorScroll()
     console.log(this.astro)
   }
 

@@ -1,9 +1,16 @@
 <div class="bkg">
-<h1>Astronauts Show</h1>
-<div><h3>{{vm.astro.name}}</h3></div>
+
+<div><h3 class="name">{{vm.astro.name}}</h3></div>
 <div class="show">
 <a data-ui-sref="astroShow({id: astro.id})"><img class="astroMainImg" ng-src={{vm.astro.photo_url}}/></a>
-</div>
-<div class="bio"><p>{{vm.astro.bio}}</p></div>
-<div class= "space-exp"><p>{{vm.astro.spaceExp}}</p></div>
+  </div>
+
+  <p class="p-heading">PERSONAL DATA</p>
+  <p class="p">{{vm.astro.bio}}</p>
+
+  <p class="chk-heading">SPACE EXPERIENCE</p><input class="checkbox" type="checkbox" ng-model="checked" aria-label="Toggle nghide"><br/>
+  <div class="check-element animate-show-hide" ng-show="checked">
+  <p class="p">{{vm.astro.spaceExp}}</p>
+  </div>
+
 </div>
