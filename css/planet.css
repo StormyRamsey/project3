@@ -30,70 +30,85 @@
   filter: drop-shadow(1px 3px 15px lightskyblue);
 }
 
-.planetId1 img:hover, .planetId2 img:hover, .planetId3 img:hover, .planetId4 img:hover, .planetId5 img:hover, .planetId6 img:hover {
+.planetId1 img:hover, .planetId2 img:hover, .planetId3 img:hover, .planetId4 img:hover, .planetId5 img:hover, .planetId6 img:hover, .planetId7 img:hover, .planetId8 img:hover{
   filter: drop-shadow(1px 3px 10px blue);
 }
 
 @keyframes myOrbit {
   from {
-    transform: rotate(0deg) translateX(70px) rotate(0deg);
+    transform: rotate(0deg) translateX(75px) rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translateX(70px) rotate(-360deg);
+    transform: rotate(360deg) translateX(75px) rotate(-360deg);
   }
 }
 
 @keyframes myOrbit1 {
   from {
-    transform: rotate(0deg) translateX(120px) rotate(0deg);
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translateX(120px) rotate(-360deg);
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
   }
 }
 
 @keyframes myOrbit2 {
   from {
-    transform: rotate(0deg) translateX(180px)rotate(0deg);
+    transform: rotate(0deg) translateX(125px)rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translateX(180px) rotate(-360deg);
+    transform: rotate(360deg) translateX(125px) rotate(-360deg);
   }
 }
 
 @keyframes myOrbit3 {
   from {
-    transform: rotate(0deg) translateX(240px) rotate(0deg);
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translateX(240px) rotate(-360deg);
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
   }
 }
 
 @keyframes myOrbit4 {
   from {
-    transform: rotate(0deg) translateX(300px) rotate(0deg);
+    transform: rotate(0deg) translateX(230px) rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translateX(300px) rotate(-360deg);
+    transform: rotate(360deg) translateX(230px) rotate(-360deg);
   }
 }
 
 @keyframes myOrbit5 {
   from {
-    transform: rotate(0deg) translateX(360px) rotate(0deg);
+    transform: rotate(0deg) translateX(280px) rotate(0deg);
   }
   to {
-    transform: rotate(360deg) translateX(360px) rotate(-360deg);
+    transform: rotate(360deg) translateX(280px) rotate(-360deg);
+  }
+}
+@keyframes myOrbit6 {
+  from {
+    transform: rotate(0deg) translateX(330px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(330px) rotate(-360deg);
+  }
+}
+@keyframes myOrbit7 {
+  from {
+    transform: rotate(0deg) translateX(380px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(380px) rotate(-360deg);
   }
 }
 
 .planet img {
-  top: 585px;
+  top: 550px;
   left: 613px;
-  width: 25px;
-  height: 25px;
-  border-radius: 13px;
+  width: 15px;
+  height: 15px;
   position: absolute;
 }
 
@@ -117,28 +132,37 @@
 }
 
 .galaxy .planetId3 img {
-  width: 35px;
-  height: 35px;
-  border-radius: 20px;
+  width: 20px;
+  height: 20px;
   animation: myOrbit2 6s linear infinite;
 }
 
 .galaxy .planetId4 img {
+  width: 20px;
+  height: 20px;
   animation: myOrbit3 7s linear infinite;
 }
 
 .galaxy .planetId5 img {
-  width: 35px;
-  height: 35px;
-  border-radius: 20px;
+  width: 50px;
+  height: 50px;
   animation: myOrbit4 8s linear infinite;
 }
 
 .galaxy .planetId6 img {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
+  width: 42px;
+  height: 42px;
   animation: myOrbit5 9s linear infinite;
+}
+.galaxy .planetId7 img {
+  width: 36px;
+  height: 36px;
+  animation: myOrbit6 10s linear infinite;
+}
+.galaxy .planetId8 img {
+  width: 35px;
+  height: 35px;
+  animation: myOrbit7 11s linear infinite;
 }
 
 .star {
@@ -146,7 +170,7 @@
   width: 70px;
   height: 70px;
   border-radius: 100px;
-  top: 570px;
+  top: 530px;
   left: 598px;
   filter: drop-shadow(1px 3px 15px red);
 }
@@ -171,7 +195,6 @@
 }
 
 .planet-container img {
-  border-radius: 150px;
   margin-left: 10px;
   margin-right: 10px;
   width: 300px;
