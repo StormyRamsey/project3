@@ -41,5 +41,11 @@
         controller: "PlanetShowController",
         controllerAs: "vm"
       })
+      .state("apod",{
+      url: "/apod",
+      templateUrl: "js/apod/index.html",
+      controller: "ApodIndexController",
+      controllerAs: "vm"
+      })
   }
 })();

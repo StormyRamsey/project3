@@ -1,0 +1,10 @@
+<div>
+  <p> {{vm.apod.date}}</p>
+  <p> {{vm.apod.title}}</p>
+  <p> {{vm.apod.explanation}}</p>
+  <p> {{vm.apod.media_type}}</p>
+  <p> "{{vm.apod.url}}"</p>
+  <iframe width="560" height="315" ng-src="{{vm.apod.url | trusted}}"
+  frameborder="0" allowfullscreen></iframe>
+
+</div>

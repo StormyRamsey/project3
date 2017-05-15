@@ -10,7 +10,7 @@ body {
   text-align: center;
   color: white;
   font-size: 25px;
-  top: 570px;
+  top: 130px;
   right: 30px;
 }
 
@@ -29,8 +29,8 @@ body {
 #bb8 {
   position: absolute;
   width: 100px;
-  top: 560px;
-  right: 100px;
+  top: 110px;
+  right: 90px;
 }
 
 .mainIndexBody {
@@ -79,10 +79,15 @@ a {
   min-width: 200px;
 }
 
-#astroMainIndex, #planetMainIndex {
+#astroMainIndex, #planetMainIndex, #apodMainIndex {
   width: 0px;
   transition: 0.5s ease-in;
   opacity: 0;
+}
+
+#apodMainIndex{
+  border-radius: 80px;
+  margin-top: 30px;
 }
 
 #astroMainIndex:hover~.indexName {
@@ -90,6 +95,10 @@ a {
 }
 
 #planetMainIndex:hover+.indexName {
+  visibility: visible;
+}
+
+#apodMainIndex:hover+.indexName {
   visibility: visible;
 }
 
