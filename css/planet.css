@@ -209,3 +209,9 @@
 .moreInfo {
   color: gold;
 }
+.moreInfo p {
+  text-align: left;
+  margin-left: 10px;
+  color: white;
+  font-size: 16px;
+}
