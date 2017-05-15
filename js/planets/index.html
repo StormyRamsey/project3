@@ -1,23 +1,17 @@
 <link rel="stylesheet" href="../css/planet.css" />
-<div class="planet-body">
-  <h1><strong>Habitable Planets</strong></h1>
-  <div class="planet-container">
-    <div ng-repeat="planet in vm.planets" class="planet-content">
-      <a class="planet" data-ui-sref="planetShow({id: planet.id})"><img ng-src="{{planet.photo_url}}" /></a>
-      <br>
-      <div class="planet-bio">
-        <br>
-        <p><strong class="strong">Planet: </strong>{{planet.name}}</p>
-        <p><strong class="strong">Star: </strong>{{planet.star}}</p>
-        <p><strong class="strong">Mass: </strong>{{planet.mass}}</p>
-        <p><strong class="strong">Period: </strong>{{planet.period}}</p>
-        <p><strong class="strong">Distance: </strong>{{planet.distance}}</p>
-        <p><strong class="moreInfo">More Info: </strong><input type="checkbox" ng-model="moreInfo"></p>
-        <div ng-show="moreInfo">
-          <p><strong>About: </strong>{{planet.about}}</p>
-          <p><strong>Habitability: </strong>{{planet.more}}</p>
-        </div>
-      </div>
+<div class="planet-index-container">
+  <h2 class="planetIntro">Click on a possible habitable planet to learn more.</h2>
+  <h6 class="planetIntro"><strong>Note: </strong>Planets are not to scale.</h6>
+  <div class="planetMenu">
+    <div ng-repeat="planet in vm.planets">
+      <hr> {{planet.name}}
+      <a class="planetBrowse planetId{{planet.id}}" data-ui-sref="planetShow({id: planet.id})"><img ng-src="{{planet.photo_url}}" /></a>
+    </div>
+  </div>
+  <div class="index_container">
+    <img class="star" src="https://photos-5.dropbox.com/t/2/AABjurg0np7E5OiM7XjfiuPNo9OGqbYWEmZnTLwwXejXew/12/670704219/png/32x32/1/_/1/2/star.png/EMr3sr0FGBcgAigC/AtFkR-jhE8TmcTebA1VVxVNC_oy6yXHqSYY7vKQ60HI?size=2048x1536&size_mode=3" alt="star" />
+    <div ng-repeat="planet in vm.planets" class="galaxy">
+      <a class="planet planetId{{planet.id}} " data-ui-sref="planetShow({id: planet.id})"><img ng-src="{{planet.photo_url}}" /></a>
     </div>
   </div>
 </div>
