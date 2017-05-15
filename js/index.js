@@ -24,8 +24,8 @@ $(function () {
   $("#astroWindowIndex").hide();
 
   //Show menu(add hover attribute) on click "title"
-  $(".title").click(function(){
-
+  $(".title, #backButton").click(function(){
+    $("html, body").animate({ scrollTop: 0 }, "slow");
     $(".mainIndexBody").css({height: "100vh"});
     $(".title").css({"margin-top": "100px"});
 
@@ -51,6 +51,7 @@ $(function () {
     $("#astroMainIndex").delay(100).animate({"opacity": "1"}, 700);
     $("#planetMainIndex").delay(300).animate({"opacity": "1"}, 700);
   })
+
 
 
   //Hide menu(re-adjust css attributes including hover) and re-direct the page on click "planet menu"
