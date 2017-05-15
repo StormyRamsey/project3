@@ -5,11 +5,10 @@
 <a data-ui-sref="astroShow({id: astro.id})"><img class="astroMainImg" ng-src={{vm.astro.photo_url}}/></a>
   </div>
 
-  <p class="p-heading">PERSONAL DATA</p>
-  <p class="p">{{vm.astro.bio}}</p>
-
+  <p class="p-heading">PERSONAL DATA</p><br>
+  <p class="p">{{vm.astro.bio}}</p><br>
   <p class="chk-heading">SPACE EXPERIENCE</p><input class="checkbox" type="checkbox" ng-model="checked" aria-label="Toggle nghide"><br/>
-  <div class="check-element animate-show-hide" ng-show="checked">
+  <br><div class="check-element animate-show-hide" ng-show="checked">
   <p class="p">{{vm.astro.spaceExp}}</p>
   </div>
 
