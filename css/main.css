@@ -1,6 +1,39 @@
 body{
     margin: 0;
 }
+
+#toTop {
+  font-family: 'Monoton', cursive;
+  width: 100px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  top: 570px;
+  right: 30px;
+
+}
+
+.navTop {
+  background-color: rgba(244, 183, 0, 0.6);
+  box-shadow: inset 0px -90px 90px -80px rgba(230,55,55,1);
+  border-radius: 30px;
+  width: 1250px;
+}
+
+.navTop:hover {
+  color: Yellow;
+  background-color: rgba(244, 183, 0, 1);
+}
+
+#bb8 {
+  position: absolute;
+  width: 100px;
+  top: 560px;
+  right: 100px;
+}
+
 .mainIndexBody {
   background: url("/background/background.png")no-repeat center;
   background-size: cover;
@@ -9,7 +42,9 @@ body{
   flex-direction: column;
   justify-content: center;
   position: relative;
+  transition: 2.5s ease-out;
 }
+
 
 a{
   text-decoration: none;

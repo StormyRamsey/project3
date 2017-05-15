@@ -18,15 +18,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Monoton" rel="stylesheet">
   </head>
   <body >
+    <img id="bb8" src="/background/bb8.png">
+    <div id="toTop">
+      <a href="#top" class="navTop">Top</a>
+      <a href="#" onclick="location.href = document.referrer; return false;" id="backButton" class="navTop">Main</a>
+    </div>
+
 
     <div class="mainIndexBody">
         <div class="textContainer">
-          <a data-ui-sref="mainIndex"><div class="title">Goldie Nauts</div></a>
+          <a href="#"><div class="title">Goldie Nauts</div></a>
           <div id="titleImage1"></div>
           <div id="titleImage2"></div>
         </div>
-
-
 
         <div class="mainIndexContainer">
             <div class= "indexImageContainer">
@@ -43,6 +47,7 @@
           <img id="astroWindowIndex" src="/background/cracked_window.png">
         </div>
     </div>
+    <div id="top"></div>
 
 
     <main data-ui-view></main>
