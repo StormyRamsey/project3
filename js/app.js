@@ -4,7 +4,8 @@
   angular
     .module("goldie_nauts", [
       "ui.router",
-      "ngResource"
+      "ngResource",
+      "720kb.datepicker",
     ])
     .config([
       "$stateProvider",
@@ -45,6 +46,12 @@
       url: "/apod",
       templateUrl: "js/apod/index.html",
       controller: "ApodIndexController",
+      controllerAs: "vm"
+      })
+      .state("apodShow",{
+      url: "/apod/:pic_date",
+      templateUrl: "js/apod/show.html",
+      controller: "ApodShowController",
       controllerAs: "vm"
       })
   }
