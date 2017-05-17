@@ -50,14 +50,14 @@ $(function() {
     $(".star, .galaxy").hide();
     $("#planetMainIndex").on({
       mouseenter: function() {
-        $(this).attr("src", "/background/earth.gif");
+        $(this).attr("src", "background/earth.gif");
         $(this).css({
           width: "110%",
           filter: "drop-shadow(1px 1px 4px gold)"
         });
       },
       mouseleave: function() {
-        $(this).attr("src", "/background/earth.png");
+        $(this).attr("src", "background/earth.png");
         $(this).css({
           width: "100%",
           filter: ""
@@ -82,14 +82,14 @@ $(function() {
 
     $("#apodMainIndex").on({
       mouseenter: function() {
-        $(this).attr("src", "/background/apod.gif");
+        $(this).attr("src", "background/apod.gif");
         $(this).css({
           width: "110%",
           filter: "drop-shadow(1px 1px 4px gold)"
         });
       },
       mouseleave: function() {
-        $(this).attr("src", "/background/apod.jpg");
+        $(this).attr("src", "background/apod.jpg");
         $(this).css({
           width: "100%",
           filter: ""
@@ -120,7 +120,7 @@ $(function() {
       "opacity": "0"
     }, 500);
     setTimeout(function() {
-      $("#planetMainIndex").attr("src", "/background/earth.png").css({
+      $("#planetMainIndex").attr("src", "background/earth.png").css({
         filter: ""
       });
       $(".mainIndexBody").css({
@@ -141,7 +141,7 @@ $(function() {
       "opacity": "0"
     }, 500);
     setTimeout(function() {
-      $("#apodMainIndex").attr("src", "/background/apod.jpg").css({
+      $("#apodMainIndex").attr("src", "background/apod.jpg").css({
         filter: ""
       });
       $(".mainIndexBody").css({
