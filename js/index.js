@@ -150,7 +150,7 @@ $(function() {
       $(".title").css({
         "margin-top": "10px"
       });
-      window.location.href = "/#/apod";
+      window.location.href = "#/apod";
     }, 1600);
   });
 
@@ -190,7 +190,7 @@ $(function() {
       $(".title").css({
         "margin-top": "10px"
       });
-      window.location.href = "project3/#/astro";
+      window.location.href = "#/astro";
     }, 6000);
   })
 });
