@@ -98,9 +98,6 @@
   filter: drop-shadow(1px 3px 15px lightskyblue);
 }
 
-/*.planetId1 img:hover, .planetId2 img:hover, .planetId3 img:hover, .planetId4 img:hover, .planetId5 img:hover, .planetId6 img:hover, .planetId7 img:hover, .planetId8 img:hover{
-  filter: drop-shadow(1px 3px 10px blue);
-}*/
 .planet img:hover, .planetBrowse img:hover{
   filter: drop-shadow(1px 3px 10px blue);
   transform: rotate(720deg);
@@ -172,7 +169,6 @@
   filter: drop-shadow(1px 3px 15px red);
 }
 
-
 /*Show Page*/
 
 .planet-container {
@@ -190,7 +186,6 @@
   padding-bottom: 20px;
   margin: 0;
 }
-
 .planet-container img {
   margin-left: 10px;
   margin-right: 10px;
