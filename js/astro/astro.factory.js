@@ -9,7 +9,7 @@
     ])
 
   function AstroFactoryFunction($resource) {
-    return $resource("http://localhost:3000/astros/:id.json", {}, {
+    return $resource("https://whispering-badlands-37063.herokuapp.com/astros/:id.json", {}, {
       update: {method: "PUT"}
     });
   }
