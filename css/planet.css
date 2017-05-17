@@ -1,39 +1,4 @@
 /*Index Page*/
-
-.planet-index-container {
-  padding-top: 10px;
-  padding-left: 10px;
-  height: 900px;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLCuSo2idh5q8B6ODVyiVt74Zyupz0FzrgGurgpP8XcjHPJ912OQ");
-}
-
-.planetIntro {
-  color: lightskyblue;
-}
-
-.planetMenu {
-  width: 50px;
-  padding: 10px 20px 10px 10px;
-  background-color: gold;
-  filter: drop-shadow(1px 3px 10px gold);
-  transition: filter 1s;
-  border: 2px solid gold;
-  border-style: inset;
-  border-radius: 15px;
-}
-
-.planetMenu img {
-  margin-top: 10px;
-}
-
-.planetMenu:hover {
-  filter: drop-shadow(1px 3px 15px lightskyblue);
-}
-
-.planetId1 img:hover, .planetId2 img:hover, .planetId3 img:hover, .planetId4 img:hover, .planetId5 img:hover, .planetId6 img:hover, .planetId7 img:hover, .planetId8 img:hover{
-  filter: drop-shadow(1px 3px 10px blue);
-}
-
 @keyframes myOrbit {
   from {
     transform: rotate(0deg) translateX(75px) rotate(0deg);
@@ -103,6 +68,43 @@
     transform: rotate(360deg) translateX(380px) rotate(-360deg);
   }
 }
+.planet-index-container {
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 120vh;
+  background: url("/background/background.png")no-repeat center;
+}
+
+.planetIntro {
+  color: lightskyblue;
+}
+
+.planetMenu {
+  width: 50px;
+  padding: 10px 20px 10px 10px;
+  background-color: gold;
+  filter: drop-shadow(1px 3px 10px gold);
+  transition: filter .5s;
+  border: 2px solid gold;
+  border-style: inset;
+  border-radius: 15px;
+}
+
+.planetMenu img {
+  margin-top: 10px;
+}
+
+.planetMenu:hover {
+  filter: drop-shadow(1px 3px 15px lightskyblue);
+}
+
+/*.planetId1 img:hover, .planetId2 img:hover, .planetId3 img:hover, .planetId4 img:hover, .planetId5 img:hover, .planetId6 img:hover, .planetId7 img:hover, .planetId8 img:hover{
+  filter: drop-shadow(1px 3px 10px blue);
+}*/
+.planet img:hover, .planetBrowse img:hover{
+  filter: drop-shadow(1px 3px 10px blue);
+  transform: rotate(720deg);
+}
 
 .planet img {
   top: 551px;
@@ -116,11 +118,7 @@
   width: 40px;
   height: 40px;
   border-radius: 25px;
-  transition: transform 15s;
-}
-
-.planetBrowse img:hover {
-  transform: rotate(720deg);
+  transition: transform 8s;
 }
 
 .galaxy .planetId1 img {
@@ -148,7 +146,6 @@
   height: 50px;
   animation: myOrbit4 8s linear infinite;
 }
-
 .galaxy .planetId6 img {
   width: 42px;
   height: 42px;
