@@ -1,7 +1,7 @@
 $(function() {
 
   //Resize the background and title of th main index page
-  if (window.location.href == "/#/" || window.location.href === "/") {
+  if (window.location.href == "#" || window.location.href === "") {
     $(".mainIndexBody").css({
       height: "100vh"
     });
@@ -130,7 +130,7 @@ $(function() {
         "margin-top": "10px"
       });
       $(".star, .galaxy").show();
-      window.location.href = "/#/planet";
+      window.location.href = "#/planet";
     }, 1600);
   });
 
@@ -150,7 +150,7 @@ $(function() {
       $(".title").css({
         "margin-top": "10px"
       });
-      window.location.href = "/#/apod";
+      window.location.href = "#/apod";
     }, 1600);
   });
 
@@ -190,7 +190,7 @@ $(function() {
       $(".title").css({
         "margin-top": "10px"
       });
-      window.location.href = "/#/astro";
+      window.location.href = "#/astro";
     }, 6000);
   })
 });
