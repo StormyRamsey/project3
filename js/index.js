@@ -5,7 +5,7 @@ $(function () {
     $(".mainIndexBody").css({height: "100vh"});
     $(".title").css({"margin-top": "100px"});
   } else {
-    $(".mainIndexBody").css({height: "80px"});
+    $(".mainIndexBody").css({height: "110px"});
     $(".title").css({"margin-top": "10px"});
   }
 
@@ -73,7 +73,7 @@ $(function () {
     $("#astroMainIndex, #planetMainIndex, #apodMainIndex").animate({width: "0px", "opacity": "0"}, 500);
     setTimeout(function() {
       $("#planetMainIndex").attr("src", "/background/earth.png").css({filter: ""});
-      $(".mainIndexBody").css({height: "80px"});
+      $(".mainIndexBody").css({height: "110px"});
       $(".title").css({"margin-top": "10px"});
       window.location.href = "http://localhost:8080/#/planet";
     }, 1600);
@@ -84,7 +84,7 @@ $(function () {
     $("#astroMainIndex, #planetMainIndex, #apodMainIndex").animate({width: "0px", "opacity": "0"}, 500);
     setTimeout(function() {
       $("#apodMainIndex").attr("src", "/background/apod.jpg").css({filter: ""});
-      $(".mainIndexBody").css({height: "80px"});
+      $(".mainIndexBody").css({height: "110px"});
       $(".title").css({"margin-top": "10px"});
       window.location.href = "http://localhost:8080/#/apod/";
     }, 1600);
@@ -115,7 +115,7 @@ $(function () {
       $("#astroHiddenIndex").removeAttr("style").attr("width", "0px");
       $("#astroMainIndex").css({filter: ""});
       $("#astroWindowIndex").hide();
-      $(".mainIndexBody").css({height: "80px"});
+      $(".mainIndexBody").css({height: "110px"});
       $(".title").css({"margin-top": "10px"});
       window.location.href = "http://localhost:8080/#/astro";
     }, 6000);
