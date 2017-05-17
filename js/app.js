@@ -42,15 +42,15 @@
         controller: "PlanetShowController",
         controllerAs: "vm"
       })
-      .state("apod",{
-      url: "/apod",
-      templateUrl: "js/apod/index.html",
-      controller: "ApodIndexController",
-      controllerAs: "vm"
-      })
       .state("apodShow",{
       url: "/apod/:pic_date",
       templateUrl: "js/apod/show.html",
+      controller: "ApodShowController",
+      controllerAs: "vm"
+      })
+      .state("apodPicFull",{
+      url: "/apod/:pic_date/full",
+      templateUrl: "js/apod/fullPic.html",
       controller: "ApodShowController",
       controllerAs: "vm"
       })

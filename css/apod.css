@@ -13,7 +13,6 @@
   margin: 0 auto;
   color: white;
   margin-bottom: 50px;
-  font-family: 'Barrio', cursive;
   width: 80%;
   padding: 30px;
   border-radius: 100px;
@@ -27,20 +26,45 @@
   text-align: center;
 }
 
-.apodTitle {
+.apodMainTitle, .apodTitle, .apodDate {
   filter: drop-shadow(5px 3px 2px rgba(233, 16, 19, 0.79));
+  font-family: 'Barrio', cursive;
   font-size: 50px;
+  text-align: center;
+}
+
+.apodMainTitle {
+  font-size: 50px;
+  border-bottom: double 10px;
 }
 
 .apodTitle  {
-  filter: drop-shadow(5px 3px 2px rgba(233, 16, 19, 0.79));
+  color: gold;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.apodDate {
   font-size: 30px;
+  margin-top: 0;
 }
 
 .apodPic {
   width: 90%;
   border-radius: 50px;
   border: 2px inset white;
+}
+
+.apodButton{
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 13px;
+}
+.apodContent {
+  font-size: 20px;
+  filter: drop-shadow(1px 2px 1px black);
+  width: 90%;
+  text-align: justify;
 }
 .fullApodPic {
   width: 100%;

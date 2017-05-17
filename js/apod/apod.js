@@ -12,13 +12,10 @@
         return $sce.trustAsResourceUrl(url);
       };
     }])
-    .controller("ApodIndexController", [
-      "ApodFactory",
-      ApodIndexControllerFunction
-    ])
     .controller("ApodShowController", [
       "ApodFactory",
       "$stateParams",
+      "$state",
       ApodShowControllerFunction
     ])
 
@@ -29,17 +26,14 @@
     });
   }
 
-  function ApodIndexControllerFunction(ApodFactory) {
-    this.apod = ApodFactory.get();
-    this.newDate = "";
-    this.getNewDate = function() {
-      this.apod = ApodFactory.get({ date: this.newDate });
-    }
-  }
-
-  function ApodShowControllerFunction(ApodFactory, $stateParams) {
-    console.log($stateParams)
+  function ApodShowControllerFunction(ApodFactory, $stateParams, $state) {
     this.apod = ApodFactory.get({ date: $stateParams.pic_date });
+    this.getNewDate = function() {
+      ApodFactory.get({ date: this.newDate }, function(newApod){
+        let newDate = newApod.date
+        $state.go('apodShow', {pic_date: newDate})
+      });
+    }
   }
 
 

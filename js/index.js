@@ -86,7 +86,7 @@ $(function () {
       $("#apodMainIndex").attr("src", "/background/apod.jpg").css({filter: ""});
       $(".mainIndexBody").css({height: "80px"});
       $(".title").css({"margin-top": "10px"});
-      window.location.href = "http://localhost:8080/#/apod";
+      window.location.href = "http://localhost:8080/#/apod/";
     }, 1600);
   });
 
