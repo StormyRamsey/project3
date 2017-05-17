@@ -1,7 +1,7 @@
 $(function() {
-
+ console.log(window.location.href)
   //Resize the background and title of th main index page
-  if (window.location.href == "" || window.location.href === "/") {
+  if (window.location.pathname == "" || window.location.pathname === "/") {
     $(".mainIndexBody").css({
       height: "100vh"
     });
