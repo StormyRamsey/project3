@@ -130,7 +130,7 @@ $(function() {
         "margin-top": "10px"
       });
       $(".star, .galaxy").show();
-      window.location.href = "/planet";
+      window.location.href = "#/planet";
     }, 1600);
   });
 
@@ -150,7 +150,7 @@ $(function() {
       $(".title").css({
         "margin-top": "10px"
       });
-      window.location.href = "#/apod";
+      window.location.href = "/#/apod";
     }, 1600);
   });
 
